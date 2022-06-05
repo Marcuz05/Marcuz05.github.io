@@ -19,7 +19,6 @@ header {
 
 .header-container {
     display: grid;
-    /* height: 10vh; */
     grid-template-rows: 10vh auto;
     grid-template-columns: 20% 60% 20%;
     grid-template-areas: 'logo titel suchleiste''. . suchergebnisse';
@@ -49,8 +48,22 @@ header {
     /* color: black; */
 }
 
+.searchbar-input:focus ~ .searchbar-results{
+    /* background-color: #131313; */
+    display: block;
+}
+
 .searchbar-results {
+    background-color: #131313;
     grid-area: suchergebnisse;
+    margin: -4.8% 5% 0 5%;
+    list-style: none;
+    padding-left: 10px;
+    display: none;
+}
+
+.searchbar-item {
+    font-size: 1rem;
     display: none;
 }
 
