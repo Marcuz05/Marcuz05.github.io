@@ -1,5 +1,9 @@
 function filterFunction() {
-    var input, filter, ul, a, i;
+    var input,
+        filter,
+        ul,
+        a,
+        i;
     input = document.getElementById("searchbar-input");
     filter = input.value.toUpperCase();
     ul = document.getElementById("searchbar-results");
@@ -12,4 +16,4 @@ function filterFunction() {
             a[i].style.display = "none";
         }
     }
-} 
+}

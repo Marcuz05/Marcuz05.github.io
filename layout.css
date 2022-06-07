@@ -40,7 +40,7 @@ header {
     grid-area: titel;
 }
 
-.searchbar-input {
+#searchbar-input {
     grid-area: suchleiste;
     margin: 5% 5% 5% 5%;
     background-color: #131313;
@@ -48,23 +48,26 @@ header {
     /* color: black; */
 }
 
-.searchbar-input:focus ~ .searchbar-results{
+#searchbar-input:focus ~ #searchbar-results{
     /* background-color: #131313; */
     display: block;
 }
 
-.searchbar-results {
+#searchbar-results {
     background-color: #131313;
     grid-area: suchergebnisse;
     margin: -4.8% 5% 0 5%;
     list-style: none;
     padding-left: 10px;
     display: none;
+    height: fit-content;
+    min-height: 2rem;
+    max-height: 20vh;
+    overflow-y: scroll;
 }
 
 .searchbar-item {
     font-size: 1rem;
-    display: none;
 }
 
 /* Style der Objekte aus dem hauptbereich. */
