@@ -7,9 +7,8 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="layout.css" />
         <link rel="stylesheet" href="responsive.css">
-        <link rel="stylesheet" href="dropdown.css">
         
-        <link rel="icon" type="image/x-icon" href="Bilder/Logo-Small.png">
+        <link rel="icon" type="image/x-icon" href="Bilder/Logo.png">
     </head>
 
     <!-- ====== Der Körper der Seite ====== -->
@@ -19,20 +18,28 @@
             <div class="header-container">
                 <!-- == Das Logo == -->
                 <a href="index.html" class="logo">
-                    <img src="Bilder/Logo-Big.png" alt="Podcast Bros">
+                    <img src="Bilder/Logo.png" alt="Podcast Bros">
                 </a>
                 <!-- == Der Seitentitel == -->
                 <h1 class="page-title">Startseite</h1>
                 <!-- == Suchleiste == -->
                 <input type="text" placeholder="&#128269; Büchersuche..." id="searchbar-input" onkeyup="filterFunction()">
                 <ul id="searchbar-results">
-                    <a href="#about" class="searchbar-item">About<br></a>
-                    <a href="#base" class="searchbar-item">Base<br></a>
-                    <a href="#blog" class="searchbar-item">Blog<br></a>
-                    <a href="#contact" class="searchbar-item">Contact<br></a>
-                    <a href="#custom" class="searchbar-item">Custom<br></a>
-                    <a href="#support" class="searchbar-item">Support<br></a>
-                    <a href="#tools" class="searchbar-item">Tools<br></a>
+                    <a href="" class="searchbar-item">#176: Harry Potter 1<br></a>
+                    <a href="" class="searchbar-item">#177: Harry Potter 2<br></a>
+                    <a href="" class="searchbar-item">#178: Harry Potter 3<br></a>
+                    <a href="" class="searchbar-item">#179: Harry Potter 4<br></a>
+                    <a href="" class="searchbar-item">#180: Harry Potter 5<br></a>
+                    <a href="" class="searchbar-item">#181: Harry Potter 6<br></a>
+                    <a href="" class="searchbar-item">#182: Harry Potter 7<br></a>
+                    <a href="" class="searchbar-item">#183: Elanus<br></a>
+                    <a href="" class="searchbar-item">#184: Erebos 1<br></a>
+                    <a href="" class="searchbar-item">#185: Erebos 2<br></a>
+                    <a href="" class="searchbar-item">#186: Cryptos<br></a>
+                    <a href="folge-187-maze-runner-1.html" class="searchbar-item">#187: Maze Runner 1<br></a>
+                    <a href="" class="searchbar-item">#188: Maze Runner 2<br></a>
+                    <a href="" class="searchbar-item">#189: Maze Runner 3<br></a>
+                    <a href="" class="searchbar-item">#190: Maze Runner 4<br></a>
                 </ul>
                 <script src="searchbar.js"></script>
             </div>
@@ -40,66 +47,66 @@
 
         <!-- ==== Hier beginnt der Hauptteil ==== -->
         <main role="main">
-            <!-- == Willkommenssektion == -->
-            <section id="welcome">
-                <h2 id="willkommen">Neuste Folge:</h2>
+            <!-- == Neuste Episode == -->
+            <section id="newest-episode">
+                <h2 id="neuste-folge">Neuste Folge:</h2>
+                <a href="folge-187-maze-runner-1.html" class="newest-link">
+                    <div class="neuste-folge-container">
+                        <img src="Bilder/cover_maze_runner_1.png" alt="Buchcover" id="newest-cover">
+                        <p id="newest-info">
+                            Folge: #187 <br>
+                            Buchtitel: Maze Runner - Die Auserwählten im Labyrinth <br>
+                            Autor: James Dashner <br>
+                            Seitenzahl: 490 Seiten <br>
+                            Thema: Wirklichkeit und Realität <br>
+                            Bewertung: &#11088;7,75
+                        </p>
+                    </div>
+                </a>
+            </section>
+            <!-- == Wir == -->
+            <section id="we">
+                <h2 id="wir">Wir:</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-                    dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-                    kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-                    ipsum dolor sit amet.
+                    Hallo Ihr Leseratten. <br>
+                    Wir sind das Podcast Duo "Podcast Bros" bestehend aus uns (Felix und Markus).
+                    Wir präsentieren euch wöchentlich ein neues Buch, passend zu den von euch gewählten Monatsthemen, und besprechen dieses dann Ausführlich.
+                    Wir freuen uns über jeden einzelnen Hörer und bedanken uns bei Euch für Eure massive Unterstützung 😄. <br>
+                    So. Jetzt aber genug über uns, denn ich bin mir sicher, Ihr seid eigentlich wegen unserer neuseten Folge hier 😉.
                 </p>
             </section>
-            <!-- == Sektion über die Funktionen der Seite == -->
-            <section id="function">
-                <h2 id="funktion">Funktion</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-                    dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-                    kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-                    ipsum dolor sit amet.
-                </p>
+            <!-- == Alte Folgen == -->
+            <section id="old-episodes">
+                <h2 id="alte-folgen">Alte Folgen:</h2>
+                <div class="alte-folgen-container">
+                    <a href="">
+                        <img src="Bilder/cover_cryptos.png" alt="Buchcover">
+                        <p>#186: Cryptos (Ursula Poznanski)</p>
+                    </a>
+                    <a href="">
+                        <img src="Bilder/cover_erebos_2.png" alt="Buchcover">
+                        <p>#185: Erebos 2 (Ursula Poznanski)</p>
+                    </a>
+                    <a href="">
+                        <img src="Bilder/cover_erebos_1.png" alt="Buchcover">
+                        <p>#184: Erebos 1 (Ursula Poznanski)</p>
+                    </a>
+                    <a href="">
+                        <img src="Bilder/cover_elanus.png" alt="Buchcover">
+                        <p>#183: Elanus (Ursula Poznanski)</p>
+                    </a>
+                    <a href="">
+                        <img src="Bilder/cover_harry_potter_7.png" alt="Buchcover">
+                        <p>#182: Harry Potter und die Heiligtümer des Todes (J. K. Rowling)</p>
+                    </a>
+                    <a href="">
+                        <img src="Bilder/cover_harry_potter_6.png" alt="Buchcover">
+                        <p>#181: Harry Potter und der Halbblutprinz (J. K. Rowling)</p>
+                    </a>
+                </div>
             </section>
-            <!-- == Sektion über Informationen über die Seite == -->
-            <section id="information">
-                <h2 id="informationen">Informationen</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-                    dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-                    kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-                    ipsum dolor sit amet.
-                </p>
-            </section>
-            <!-- == Sektion über Rechtliches == -->
-            <section id="rights">
-                <h2 id="rechtliches">Rechtliches</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-                    dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-                    kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-                    ipsum dolor sit amet.
-                </p>
-            </section>
-            <!-- == Sektion über den Inhalt mit Linkliste == -->
-            <section id="content">
-                <h2 id="inhalt">Inhalt</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-                    dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-                    kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-                    ipsum dolor sit amet.
-                </p>
-            </section>
+            <br>
+            <p></p>
         </main>
 
         <!-- ==== Hier beginnt der Fußbereich ==== -->

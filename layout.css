@@ -57,13 +57,15 @@ header {
     background-color: #131313;
     grid-area: suchergebnisse;
     margin: -4.8% 5% 0 5%;
-    list-style: none;
     padding-left: 10px;
     display: none;
-    height: fit-content;
     min-height: 2rem;
     max-height: 20vh;
     overflow-y: scroll;
+}
+
+#searchbar-results:hover {
+    display: block;
 }
 
 .searchbar-item {
@@ -77,6 +79,47 @@ main {
     margin: 0 5% 0 5%;
     padding: 10vh 2% 0 2%;
     box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+}
+
+.neuste-folge-container {
+    display: grid;
+    grid-template-columns: 20% 5% 75%;
+    grid-template-areas: 'cover . info';
+    align-items: center;
+    background-color: #00000069;
+}
+
+.newest-link {
+    text-decoration: none;
+}
+
+#newest-cover {
+    grid-area: cover;
+    width: 100%;
+}
+
+#newest-info {
+    grid-area: info;
+    font-size: 2rem;
+}
+
+.alte-folgen-container {
+    display: grid;
+    grid-template-areas: '1' '2' '3' '4' '5' '6';
+    row-gap: 10px;
+}
+
+.alte-folgen-container a {
+    background-color: #00000069;
+    display: grid;
+    grid-template-areas: 'cover title';
+    align-items: center;
+    grid-template-columns: max-content auto;
+    column-gap: 10px;
+}
+
+.alte-folgen-container a img {
+    height: 20vh;
 }
 
 /* Style der Objekte aus dem Fußbereich. */
