@@ -1,0 +1,20 @@
+#audio-stream {
+    width: 100%;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #161616;
+    border-radius: 0px;
+}
+
+#buttons {
+    display: grid;
+    grid-template-areas: ". . . .";
+}
+
+.sprungknopf {
+    background-color: #161616;
+    border-color: #141414;
+    cursor: pointer;
+    font-size: 1.3rem;
+}

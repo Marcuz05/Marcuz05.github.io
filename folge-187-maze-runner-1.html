@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="de">
+    <!-- ====== Die Metadaten für diese Seite ====== -->
+    <head>
+        <meta charset="utf-8" />
+        <title>#187: Maze Runner 1</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="layout.css" />
+        <link rel="stylesheet" href="responsive.css">
+        <link rel="stylesheet" href="folgen.css">
+        
+        <link rel="icon" type="image/x-icon" href="Bilder/Logo.png">
+    </head>
+
+    <!-- ====== Der Körper der Seite ====== -->
+    <body>
+        <!-- ==== Hier beginnt der Header ==== -->
+        <header role="banner">
+            <div class="header-container">
+                <!-- == Das Logo == -->
+                <a href="index.html" class="logo">
+                    <img src="Bilder/Logo.png" alt="Podcast Bros">
+                </a>
+                <!-- == Der Seitentitel == -->
+                <h1 class="page-title">Maze Runner 1</h1>
+                <!-- == Suchleiste == -->
+                <input type="text" placeholder="&#128269; Büchersuche..." id="searchbar-input" onkeyup="filterFunction()">
+                <ul id="searchbar-results">
+                    <a href="folge-xxx-xxx.html" class="searchbar-item">#176: Harry Potter 1<br></a>
+                    <a href="folge-xxx-xxx.html" class="searchbar-item">#177: Harry Potter 2<br></a>
+                    <a href="folge-xxx-xxx.html" class="searchbar-item">#178: Harry Potter 3<br></a>
+                    <a href="folge-xxx-xxx.html" class="searchbar-item">#179: Harry Potter 4<br></a>
+                    <a href="folge-xxx-xxx.html" class="searchbar-item">#180: Harry Potter 5<br></a>
+                    <a href="folge-xxx-xxx.html" class="searchbar-item">#181: Harry Potter 6<br></a>
+                    <a href="folge-xxx-xxx.html" class="searchbar-item">#182: Harry Potter 7<br></a>
+                    <a href="folge-xxx-xxx.html" class="searchbar-item">#183: Elanus<br></a>
+                    <a href="folge-xxx-xxx.html" class="searchbar-item">#184: Erebos 1<br></a>
+                    <a href="folge-xxx-xxx.html" class="searchbar-item">#185: Erebos 2<br></a>
+                    <a href="folge-xxx-xxx.html" class="searchbar-item">#186: Cryptos<br></a>
+                    <a href="folge-187-maze-runner-1.html" class="searchbar-item">#187: Maze Runner 1<br></a>
+                    <a href="folge-xxx-xxx.html" class="searchbar-item">#188: Maze Runner 2<br></a>
+                    <a href="folge-xxx-xxx.html" class="searchbar-item">#189: Maze Runner 3<br></a>
+                    <a href="folge-xxx-xxx.html" class="searchbar-item">#190: Maze Runner 4<br></a>
+                </ul>
+                <script src="searchbar.js"></script>
+            </div>
+        </header>
+
+        <!-- ==== Hier beginnt der Hauptteil ==== -->
+        <main role="main">
+            <!-- == Neuste Episode == -->
+            <section id="newest-episode">
+                <a href="folge-187-maze-runner-1.html" class="newest-link">
+                    <div class="neuste-folge-container">
+                        <img src="Bilder/cover_maze_runner_1.png" alt="Buchcover" id="newest-cover">
+                        <p id="newest-info">
+                            Folge: #187 <br>
+                            Buchtitel: Maze Runner - Die Auserwählten im Labyrinth <br>
+                            Autor: James Dashner <br>
+                            Seitenzahl: 490 Seiten <br>
+                            Thema: Wirklichkeit und Realität <br>
+                            Bewertung: &#11088;7,75
+                        </p>
+                    </div>
+                </a>
+            </section>
+            <!-- == Der Audiostream + Infos == -->
+            <section id="audiostream">
+                <audio controls id="audio-stream">
+                    <source src="Audio/Maze Runner.mp3" type="audio/mpeg">
+                    <source src="Audio/Maze Runner.ogg" type="audio/ogg">
+                    Dein Browser unterstützt keine Audiowiedergabe.
+                </audio>
+                <script src="audio.js"></script>
+                <div id="buttons">
+                    <button class="sprungknopf" onclick="toStart()">Intro</button>
+                    <button class="sprungknopf" onclick="toMain()">Buchinhalt</button>
+                    <button class="sprungknopf" onclick="toTheme()">Themengespräch</button>
+                    <button class="sprungknopf" onclick="toEnd()">Schluss</button>
+                </div>
+                <h2>Zusammenfassung:</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, non atque animi nam nemo quaerat veritatis vero excepturi architecto. Pariatur ducimus nihil rem porro architecto. Obcaecati, accusantium temporibus! Ea, nemo?</p>
+            </section>
+            <!-- == Alte Folgen == -->
+            <section id="old-episodes">
+                <h2 id="alte-folgen">Alte Folgen:</h2>
+                <div class="alte-folgen-container">
+                    <a href="folge-xxx-xxx.html">
+                        <img src="Bilder/cover_cryptos.png" alt="Buchcover">
+                        <p>#186: Cryptos (Ursula Poznanski)</p>
+                    </a>
+                    <a href="folge-xxx-xxx.html">
+                        <img src="Bilder/cover_erebos_2.png" alt="Buchcover">
+                        <p>#185: Erebos 2 (Ursula Poznanski)</p>
+                    </a>
+                    <a href="folge-xxx-xxx.html">
+                        <img src="Bilder/cover_erebos_1.png" alt="Buchcover">
+                        <p>#184: Erebos 1 (Ursula Poznanski)</p>
+                    </a>
+                    <a href="folge-xxx-xxx.html">
+                        <img src="Bilder/cover_elanus.png" alt="Buchcover">
+                        <p>#183: Elanus (Ursula Poznanski)</p>
+                    </a>
+                    <a href="folge-xxx-xxx.html">
+                        <img src="Bilder/cover_harry_potter_7.png" alt="Buchcover">
+                        <p>#182: Harry Potter und die Heiligtümer des Todes (J. K. Rowling)</p>
+                    </a>
+                    <a href="folge-xxx-xxx.html">
+                        <img src="Bilder/cover_harry_potter_6.png" alt="Buchcover">
+                        <p>#181: Harry Potter und der Halbblutprinz (J. K. Rowling)</p>
+                    </a>
+                </div>
+            </section>
+            <br>
+            <p></p>
+        </main>
+
+        <!-- ==== Hier beginnt der Fußbereich ==== -->
+        <footer>
+            <div class="footer-container">
+                <a href="index.html" class="footer-to-startpage">Startseite</a>
+                <a href="about.html" class="footer-about">Über</a>
+                <p class="copyright">&#169; Podcast Bros</p>
+            </div>
+        </footer>
+    </body>
+</html>
