@@ -8,114 +8,121 @@
         <link rel="stylesheet" href="layout.css" />
         <link rel="stylesheet" href="responsive.css">
         
-        <link rel="icon" type="image/x-icon" href="Bilder/Logo.png">
+        <link rel="icon" type="image/x-icon" href="Bilder/Logo-Small.png">
     </head>
 
     <!-- ====== Der Körper der Seite ====== -->
     <body>
-        <!-- ==== Hier beginnt der Header ==== -->
-        <header role="banner">
-            <div class="header-container">
-                <!-- == Das Logo == -->
-                <a href="index.html" class="logo">
-                    <img src="Bilder/Logo.png" alt="Podcast Bros">
-                </a>
-                <!-- == Der Seitentitel == -->
-                <h1 class="page-title">Startseite</h1>
-                <!-- == Suchleiste == -->
-                <input type="text" placeholder="&#128269; Büchersuche..." id="searchbar-input" onkeyup="filterFunction()">
-                <ul id="searchbar-results">
-                    <a href="folge-xxx-xxx.html" class="searchbar-item">#176: Harry Potter 1<br></a>
-                    <a href="folge-xxx-xxx.html" class="searchbar-item">#177: Harry Potter 2<br></a>
-                    <a href="folge-xxx-xxx.html" class="searchbar-item">#178: Harry Potter 3<br></a>
-                    <a href="folge-xxx-xxx.html" class="searchbar-item">#179: Harry Potter 4<br></a>
-                    <a href="folge-xxx-xxx.html" class="searchbar-item">#180: Harry Potter 5<br></a>
-                    <a href="folge-xxx-xxx.html" class="searchbar-item">#181: Harry Potter 6<br></a>
-                    <a href="folge-xxx-xxx.html" class="searchbar-item">#182: Harry Potter 7<br></a>
-                    <a href="folge-xxx-xxx.html" class="searchbar-item">#183: Elanus<br></a>
-                    <a href="folge-xxx-xxx.html" class="searchbar-item">#184: Erebos 1<br></a>
-                    <a href="folge-xxx-xxx.html" class="searchbar-item">#185: Erebos 2<br></a>
-                    <a href="folge-xxx-xxx.html" class="searchbar-item">#186: Cryptos<br></a>
-                    <a href="folge-187-maze-runner-1.html" class="searchbar-item">#187: Maze Runner 1<br></a>
-                    <a href="folge-xxx-xxx.html" class="searchbar-item">#188: Maze Runner 2<br></a>
-                    <a href="folge-xxx-xxx.html" class="searchbar-item">#189: Maze Runner 3<br></a>
-                    <a href="folge-xxx-xxx.html" class="searchbar-item">#190: Maze Runner 4<br></a>
-                </ul>
-                <script src="searchbar.js"></script>
-            </div>
-        </header>
-
-        <!-- ==== Hier beginnt der Hauptteil ==== -->
-        <main role="main">
-            <!-- == Neuste Episode == -->
-            <section id="newest-episode">
-                <h2 id="neuste-folge">Neuste Folge:</h2>
-                <a href="folge-187-maze-runner-1.html" class="newest-link">
-                    <div class="neuste-folge-container">
-                        <img src="Bilder/cover_maze_runner_1.png" alt="Buchcover" id="newest-cover">
-                        <p id="newest-info">
-                            Folge: #187 <br>
-                            Buchtitel: Maze Runner - Die Auserwählten im Labyrinth <br>
-                            Autor: James Dashner <br>
-                            Seitenzahl: 490 Seiten <br>
-                            Thema: Wirklichkeit und Realität <br>
-                            Bewertung: &#11088;7,75
-                        </p>
+        <div class="layout-container">
+            <!-- ==== Hier beginnt der Header ==== -->
+            <header role="banner">
+                <div class="header-container">
+                    <!-- == Das Logo == -->
+                    <a href="index.html" class="logo">
+                        <img src="Bilder/Logo-Big.png" alt="Corona Aktuell">
+                    </a>
+                    <!-- == Der Seitentitel == -->
+                    <h1 class="page-title">Startseite</h1>
+                    <!-- == Das Dropdown-Menü == -->
+                    <div role="navigation" class="menu">
+                        <div class="menu-button">
+                            <h1 class="menu-header">&#8801</h1>
+                        </div>
+                        <div class="menu-content">
+                            <!-- == Dropdown Links == -->
+                            <a href="index.html" class="menu-item">> Startseite</a>
+                            <a href="Deutschland/inzidenz.html" class="menu-item">Inzidenz</a>
+                            <a href="Deutschland/coronafaelle.html" class="menu-item">Coronafälle</a>
+                            <a href="Deutschland/todesfaelle.html" class="menu-item">Todesfälle</a>
+                            <a href="about.html" class="menu-item">Über</a>
+                        </div>
                     </div>
-                </a>
-            </section>
-            <!-- == Wir == -->
-            <section id="we">
-                <h2 id="wir">Wir:</h2>
-                <p>
-                    Hallo Ihr Leseratten. <br>
-                    Wir sind das Podcast Duo "Podcast Bros" bestehend aus uns (Felix und Markus).
-                    Wir präsentieren euch wöchentlich ein neues Buch, passend zu den von euch gewählten Monatsthemen, und besprechen dieses dann Ausführlich.
-                    Wir freuen uns über jeden einzelnen Hörer und bedanken uns bei Euch für Eure massive Unterstützung 😄. <br>
-                    So. Jetzt aber genug über uns, denn ich bin mir sicher, Ihr seid eigentlich wegen unserer neuseten Folge hier 😉.
-                </p>
-            </section>
-            <!-- == Alte Folgen == -->
-            <section id="old-episodes">
-                <h2 id="alte-folgen">Alte Folgen:</h2>
-                <div class="alte-folgen-container">
-                    <a href="folge-xxx-xxx.html">
-                        <img src="Bilder/cover_cryptos.png" alt="Buchcover">
-                        <p>#186: Cryptos (Ursula Poznanski)</p>
-                    </a>
-                    <a href="folge-xxx-xxx.html">
-                        <img src="Bilder/cover_erebos_2.png" alt="Buchcover">
-                        <p>#185: Erebos 2 (Ursula Poznanski)</p>
-                    </a>
-                    <a href="folge-xxx-xxx.html">
-                        <img src="Bilder/cover_erebos_1.png" alt="Buchcover">
-                        <p>#184: Erebos 1 (Ursula Poznanski)</p>
-                    </a>
-                    <a href="folge-xxx-xxx.html">
-                        <img src="Bilder/cover_elanus.png" alt="Buchcover">
-                        <p>#183: Elanus (Ursula Poznanski)</p>
-                    </a>
-                    <a href="folge-xxx-xxx.html">
-                        <img src="Bilder/cover_harry_potter_7.png" alt="Buchcover">
-                        <p>#182: Harry Potter und die Heiligtümer des Todes (J. K. Rowling)</p>
-                    </a>
-                    <a href="folge-xxx-xxx.html">
-                        <img src="Bilder/cover_harry_potter_6.png" alt="Buchcover">
-                        <p>#181: Harry Potter und der Halbblutprinz (J. K. Rowling)</p>
-                    </a>
                 </div>
-            </section>
-            <br>
-            <p></p>
-        </main>
+                <!-- == Ein kleiner Farbübergang == -->
+                <div class="fadeGradientTop" >
+            </header>
 
-        <!-- ==== Hier beginnt der Fußbereich ==== -->
-        <footer>
-            <div class="footer-container">
-                <a href="index.html" class="footer-to-startpage">Startseite</a>
-                <a href="about.html" class="footer-about">Über</a>
-                <p class="copyright">&#169; Podcast Bros</p>
-            </div>
-        </footer>
+            <!-- ==== Hier beginnt die Seitennavigation ==== -->
+            <aside role="navigation">
+                <nav>
+                    <!-- == Die Navigationslinks für diese Seite == -->
+                    <ul class="link-list">
+                        <li class="side-links"><a href="#welcome">Willkommen</a></li>
+                        <li class="side-links"><a href="#function">Funktion</a></li>
+                        <li class="side-links"><a href="#information">Informationen</a></li>
+                        <li class="side-links"><a href="#rights">Rechtliches</a></li>
+                        <li class="side-links last-link"><a href="#content">Inhalt</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- ==== Hier beginnt der Hauptteil ==== -->
+            <main role="main">
+                <!-- == Willkommenssektion == -->
+                <section id="welcome">
+                    <h2 id="willkommen">Willkommen</h2>
+                    <p>
+                        Herzlich willkommen auf "Corona Aktuell". <br>
+                        Dies ist eine Seite, welche Ihnen die Übersicht über die aktuelle Coronalage ermöglichen soll. <br>
+                        Ich hoffen, die Seite hilft Ihnen weiter und Sie bleiben gesund.
+                    </p>
+                </section>
+                <!-- == Sektion über die Funktionen der Seite == -->
+                <section id="function">
+                    <h2 id="funktion">Funktion</h2>
+                    <p>
+                        Damit diese Seite funktioniert und Ihnen die aktuellsten Daten präsentieren kann, greift sie auf die vom
+                        <a href="https://www.rki.de/DE/Home/homepage_node.html" target="_blank">Robert-Koch-Institut (RKI)</a>
+                        bereitgestellten Daten zu.
+                        Dies geschieht mit Hilfe einer
+                        <a href="https://services7.arcgis.com/mOBPykOjAyBO2ZKk/arcgis/rest/services/RKI_Landkreisdaten/FeatureServer/0/query?where=1%3D1&outFields=BL,BL_ID,cases7_bl_per_100k,cases7_bl,death7_bl,last_update&returnGeometry=false&outSR=4326&f=json" target="_blank">API</a>
+                        , welche durch das 
+                        <a href="https://www.rki.de/DE/Home/homepage_node.html" target="_blank">RKI</a>
+                        bereitgestellt wird.
+                        Dadurch ist es möglich Ihnen immer die aktuellsten offiziellen Daten zu bieten, ohne diese aufwändig einpflegen zu müssen.
+                    </p>
+                </section>
+                <!-- == Sektion über Informationen über die Seite == -->
+                <section id="information">
+                    <h2 id="informationen">Informationen</h2>
+                    <p>
+                        Dieses Projekt hat sich als umfangreicher erwiesen, als erwartet und ich hatte an einigen Stellen immer wieder mit Rückschlägen und Problemen zu kämpfen,
+                        weswegen sich hier nun nur auf wenige Nenngrößen bezogen wurde und diese nur im bundesweiten Überblick verglichen werden. <br>
+                        Ich bitten um Ihr Verständnis.
+                    </p>
+                </section>
+                <!-- == Sektion über Rechtliches == -->
+                <section id="rights">
+                    <h2 id="rechtliches">Rechtliches</h2>
+                    <p>
+                        Auch, wenn es sich hier "nur" um ein Schulprojekt handelt sind jedoch alle Grafiken selbst erstellt, sodass die Rechte an diesen Bildern bei dem Ersteller (mir) liegen, sodass diese hier ihre freie Verwendung finden können.
+                        Wenn Sie ebenfalls die auf dieser Seite verwendeten Grafiken verwenden wollen, können sie dies aber bedenkenlos tun. <br>
+                        Die Grafiken stehen zur freien verfügung. 
+                    </p>
+                </section>
+                <!-- == Sektion über den Inhalt mit Linkliste == -->
+                <section id="content">
+                    <h2 id="inhalt">Inhalt</h2>
+                    <p>
+                        So. Genug der Vorrede. <br>
+                        Diese Webseite umfasst natürlich mehr als diese Informations/Startseite.
+                        Die weiteren Seiten können Sie entweder über das Menü (&#8801) im Banner erreichen, oder Sie verwenden zur Navigation die folgenden Links: <br>
+                        <a href="Deutschland/inzidenz.html">Inzidenz</a> <br>
+                        <a href="Deutschland/coronafaelle.html">Coronafälle</a> <br>
+                        <a href="Deutschland/todesfaelle.html">Todesfälle</a>
+                    </p>
+                </section>
+            </main>
+
+            <!-- ==== Hier beginnt der Fußbereich ==== -->
+            <footer>
+                <div class="footer-container">
+                    <a href="index.html" class="footer-to-startpage">Startseite</a>
+                    <a href="#" class="footer-pagestart">Seitenstart</a>
+                    <a href="about.html" class="footer-about">Über</a>
+                    <p class="copyright">&#169; Markus Richter</p>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
